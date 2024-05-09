@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.EditPaymentForm">
+   <children>
+      <AnchorPane prefHeight="770.0" prefWidth="726.0">
+         <children>
+            <AnchorPane prefHeight="771.0" prefWidth="721.0">
+               <children>
+                  <AnchorPane fx:id="rootNode" prefHeight="761.0" prefWidth="710.0">
+                     <children>
+                        <Label layoutX="257.0" layoutY="69.0" prefHeight="58.0" prefWidth="203.0" text="Edit Payment" textFill="#f80000">
+                           <font>
+                              <Font name="Leelawadee UI Bold" size="31.0" />
+                           </font>
+                        </Label>
+                        <AnchorPane prefHeight="58.0" prefWidth="697.0" style="-fx-background-color: #000428;" />
+                        <AnchorPane layoutX="-2.0" layoutY="711.0" prefHeight="65.0" prefWidth="726.0" style="-fx-background-color: #000428;" />
+                        <AnchorPane layoutX="-2.0" prefHeight="751.0" prefWidth="76.0" style="-fx-background-color: #000428;" />
+                        <AnchorPane layoutX="636.0" prefHeight="771.0" prefWidth="90.0" style="-fx-background-color: #000428;" />
+                        <TextField fx:id="txtPaymentId" layoutX="144.0" layoutY="200.0" opacity="0.75" prefHeight="40.0" prefWidth="418.0" style="-fx-background-color: C0C0C0;" text="Payment Id" />
+                        <TextField fx:id="txtAmount" layoutX="144.0" layoutY="284.0" opacity="0.75" prefHeight="40.0" prefWidth="418.0" style="-fx-background-color: C0C0C0;" text="Amount" />
+                        <TextField fx:id="txtDate" layoutX="144.0" layoutY="366.0" opacity="0.75" prefHeight="40.0" prefWidth="418.0" style="-fx-background-color: C0C0C0;" text="Date" />
+                        <Text layoutX="127.0" layoutY="185.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Payment Id" textAlignment="CENTER" wrappingWidth="110.0">
+                           <font>
+                              <Font name="Arial" size="12.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="117.0" layoutY="273.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Amount" textAlignment="CENTER" wrappingWidth="110.0">
+                           <font>
+                              <Font name="Arial" size="12.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="107.0" layoutY="354.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date" textAlignment="CENTER" wrappingWidth="110.0">
+                           <font>
+                              <Font name="Arial" size="12.0" />
+                           </font>
+                        </Text>
+                        <JFXButton buttonType="RAISED" layoutX="372.0" layoutY="652.0" onAction="#btnEditOnAction" prefHeight="40.0" prefWidth="177.0" style="-fx-background-color: #00FF00;" text="Edit">
+                           <font>
+                              <Font name="Leelawadee UI Bold" size="16.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton buttonType="RAISED" layoutX="153.0" layoutY="652.0" onAction="#btnExitOnAction" prefHeight="40.0" prefWidth="169.0" style="-fx-background-color: #FFD700;" text="Back">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="23.0" fitWidth="22.0">
+                                 <image>
+                                    <Image url="@../images/icons8-back-30.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                        <TextField fx:id="txtUserID" layoutX="140.0" layoutY="518.0" opacity="0.75" prefHeight="40.0" prefWidth="418.0" style="-fx-background-color: C0C0C0;" text="User ID" />
+                        <TextField fx:id="txtStudentId" layoutX="140.0" layoutY="448.0" opacity="0.75" prefHeight="40.0" prefWidth="418.0" style="-fx-background-color: C0C0C0;" text="Student ID" />
+                        <Text layoutX="107.0" layoutY="508.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User ID" textAlignment="CENTER" wrappingWidth="110.0">
+                           <font>
+                              <Font name="Arial" size="12.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="117.0" layoutY="436.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student ID" textAlignment="CENTER" wrappingWidth="110.0">
+                           <font>
+                              <Font name="Arial" size="12.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="117.0" layoutY="578.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Course ID" textAlignment="CENTER" wrappingWidth="110.0">
+                           <font>
+                              <Font name="Arial" size="12.0" />
+                           </font>
+                        </Text>
+                        <TextField fx:id="txtCourseId" layoutX="140.0" layoutY="588.0" opacity="0.75" prefHeight="40.0" prefWidth="418.0" style="-fx-background-color: C0C0C0;" text="Course ID" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

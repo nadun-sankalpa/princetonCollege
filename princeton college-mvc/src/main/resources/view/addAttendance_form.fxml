@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.AddAttendanceForm">
+   <children>
+      <AnchorPane prefHeight="766.0" prefWidth="720.0">
+         <children>
+            <AnchorPane prefHeight="773.0" prefWidth="719.0">
+               <children>
+                  <AnchorPane fx:id="rootNode" prefHeight="761.0" prefWidth="707.0">
+                     <children>
+                        <AnchorPane layoutX="97.0" layoutY="56.0" prefHeight="640.0" prefWidth="512.0" style="-fx-background-color: C0C0C0; -fx-background-radius: 10;">
+                           <children>
+                              <Text layoutX="25.0" layoutY="344.0" strokeType="OUTSIDE" strokeWidth="0.0" text="In - Time" textAlignment="CENTER" wrappingWidth="110.0">
+                                 <font>
+                                    <Font name="Arial" size="12.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="txtInTime" layoutX="49.0" layoutY="357.0" opacity="0.75" prefHeight="35.0" prefWidth="385.0" promptText="In - Time" style="-fx-background-color: #FFFFFF; -fx-background-radius: 10;" />
+                              <Text layoutX="33.0" layoutY="418.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Out - Time" textAlignment="CENTER" wrappingWidth="110.0">
+                                 <font>
+                                    <Font name="Arial" size="12.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="txtOutTime" layoutX="49.0" layoutY="432.0" opacity="0.75" prefHeight="35.0" prefWidth="385.0" promptText="Out - Time" style="-fx-background-color: #FFFFFF; -fx-background-radius: 10;" />
+                              <Text layoutX="26.0" layoutY="491.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User ID" textAlignment="CENTER" wrappingWidth="110.0">
+                                 <font>
+                                    <Font name="Arial" size="12.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="txtUserId" layoutX="49.0" layoutY="503.0" opacity="0.75" prefHeight="35.0" prefWidth="385.0" promptText="User ID" style="-fx-background-color: #FFFFFF; -fx-background-radius: 10;" />
+                           </children>
+                        </AnchorPane>
+                        <Label layoutX="251.0" layoutY="69.0" prefHeight="58.0" prefWidth="195.0" text="Add Attendance" textFill="#f80000">
+                           <font>
+                              <Font name="Leelawadee UI Bold" size="23.0" />
+                           </font>
+                        </Label>
+                        <AnchorPane prefHeight="46.0" prefWidth="697.0" style="-fx-background-color: #000428;" />
+                        <AnchorPane layoutX="-2.0" layoutY="717.0" prefHeight="58.0" prefWidth="709.0" style="-fx-background-color: #000428;" />
+                        <AnchorPane layoutX="-2.0" prefHeight="751.0" prefWidth="61.0" style="-fx-background-color: #000428;" />
+                        <AnchorPane layoutX="648.0" prefHeight="775.0" prefWidth="72.0" style="-fx-background-color: #000428;" />
+                        <TextField fx:id="txtAttendanceId" layoutX="149.0" layoutY="197.0" opacity="0.75" prefHeight="35.0" prefWidth="385.0" promptText="Attendance Id" style="-fx-background-color: #FFFFFF; -fx-background-radius: 10;" />
+                        <TextField fx:id="txtStudentName" layoutX="149.0" layoutY="270.0" opacity="0.75" prefHeight="35.0" prefWidth="385.0" promptText="StudentName" style="-fx-background-color: #FFFFFF; -fx-background-radius: 10;" />
+                        <Text layoutX="134.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Attendance Id" textAlignment="CENTER" wrappingWidth="110.0">
+                           <font>
+                              <Font name="Arial" size="12.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="134.0" layoutY="261.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student Name" textAlignment="CENTER" wrappingWidth="110.0">
+                           <font>
+                              <Font name="Arial" size="12.0" />
+                           </font>
+                        </Text>
+                        <JFXButton buttonType="RAISED" layoutX="367.0" layoutY="641.0" onAction="#btnAddOnAction" prefHeight="25.0" prefWidth="169.0" style="-fx-background-color: #00FF00;" text="Add">
+                           <font>
+                              <Font name="Leelawadee UI Bold" size="16.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton buttonType="RAISED" layoutX="167.0" layoutY="641.0" onAction="#btnExitOnAction" prefHeight="0.0" prefWidth="169.0" style="-fx-background-color: #FFD700;" text="Back">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="23.0" fitWidth="22.0">
+                                 <image>
+                                    <Image url="@../images/icons8-back-30.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                        <Text layoutX="112.0" layoutY="327.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date" textAlignment="CENTER" wrappingWidth="110.0">
+                           <font>
+                              <Font name="Arial" size="12.0" />
+                           </font>
+                        </Text>
+                        <TextField fx:id="txtDate" layoutX="149.0" layoutY="341.0" opacity="0.75" prefHeight="35.0" prefWidth="385.0" promptText="Date" style="-fx-background-color: #FFFFFF; -fx-background-radius: 10;" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

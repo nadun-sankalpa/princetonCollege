@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="841.0" prefWidth="822.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.EditBatchForm">
+   <children>
+      <AnchorPane prefHeight="841.0" prefWidth="834.0">
+         <children>
+            <AnchorPane prefHeight="773.0" prefWidth="719.0">
+               <children>
+                  <AnchorPane fx:id="rootNode" prefHeight="761.0" prefWidth="707.0">
+                     <children>
+                        <AnchorPane layoutX="109.0" layoutY="77.0" prefHeight="694.0" prefWidth="625.0" style="-fx-background-color: C0C0C0; -fx-background-radius: 20;">
+                           <children>
+                              <Label layoutX="256.0" layoutY="-7.0" prefHeight="58.0" prefWidth="140.0" text="Edit Batch" textFill="#f80000">
+                                 <font>
+                                    <Font name="Leelawadee UI Bold" size="23.0" />
+                                 </font>
+                              </Label>
+                              <Circle fill="#00e4eb" layoutX="313.0" layoutY="110.0" radius="70.0" stroke="BLACK" strokeType="INSIDE" />
+                              <ImageView fitHeight="99.0" fitWidth="98.0" layoutX="264.0" layoutY="61.0">
+                                 <image>
+                                    <Image url="@../images/icons8-multiple-users-50.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                        <TextField fx:id="txtBatchId" layoutX="163.0" layoutY="277.0" opacity="0.75" prefHeight="35.0" prefWidth="474.0" promptText="Batch Id" style="-fx-background-color: #FFFFFF; -fx-background-radius: 10;" />
+                        <TextField fx:id="txtBatchName" layoutX="162.0" layoutY="348.0" opacity="0.75" prefHeight="35.0" prefWidth="474.0" promptText="Batch Name" style="-fx-background-color: #FFFFFF; -fx-background-radius: 10;" />
+                        <TextField fx:id="txtNoLecturers" layoutX="160.0" layoutY="490.0" opacity="0.75" prefHeight="35.0" prefWidth="474.0" promptText="No. of Lecturers" style="-fx-background-color: #FFFFFF; -fx-background-radius: 10;" />
+                        <Text layoutX="141.0" layoutY="265.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Batch Id" textAlignment="CENTER" wrappingWidth="110.0">
+                           <font>
+                              <Font name="Arial" size="12.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="141.0" layoutY="339.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Batch Name" textAlignment="CENTER" wrappingWidth="110.0">
+                           <font>
+                              <Font name="Arial" size="12.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="147.0" layoutY="480.0" strokeType="OUTSIDE" strokeWidth="0.0" text="No. of Lecturers" textAlignment="CENTER" wrappingWidth="110.0">
+                           <font>
+                              <Font name="Arial" size="12.0" />
+                           </font>
+                        </Text>
+                        <JFXButton buttonType="RAISED" layoutX="430.0" layoutY="692.0" onAction="#btnEditOnAction" prefHeight="25.0" prefWidth="169.0" style="-fx-background-color: #00FF00;" text="Edit">
+                           <font>
+                              <Font name="Leelawadee UI Bold" size="16.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton buttonType="RAISED" layoutX="196.0" layoutY="692.0" onAction="#btnExitOnAction" prefHeight="0.0" prefWidth="169.0" style="-fx-background-color: #FFD700;" text="Back">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="23.0" fitWidth="22.0">
+                                 <image>
+                                    <Image url="@../images/icons8-back-30.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                        <Text layoutX="147.0" layoutY="409.0" strokeType="OUTSIDE" strokeWidth="0.0" text="No. of Students" textAlignment="CENTER" wrappingWidth="110.0">
+                           <font>
+                              <Font name="Arial" size="12.0" />
+                           </font>
+                        </Text>
+                        <TextField fx:id="txtNoStudents" layoutX="160.0" layoutY="420.0" opacity="0.75" prefHeight="35.0" prefWidth="474.0" promptText="No. of Students" style="-fx-background-color: #FFFFFF; -fx-background-radius: 10;" />
+                        <Text layoutX="141.0" layoutY="549.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Main Lecturer" textAlignment="CENTER" wrappingWidth="110.0">
+                           <font>
+                              <Font name="Arial" size="12.0" />
+                           </font>
+                        </Text>
+                        <TextField fx:id="txtMainLecturer" layoutX="162.0" layoutY="560.0" opacity="0.75" prefHeight="35.0" prefWidth="474.0" promptText="Main Lecturer" style="-fx-background-color: #FFFFFF; -fx-background-radius: 10;" />
+                        <Text layoutX="154.0" layoutY="616.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Batch Representer" textAlignment="CENTER" wrappingWidth="110.0">
+                           <font>
+                              <Font name="Arial" size="12.0" />
+                           </font>
+                        </Text>
+                        <TextField fx:id="txtBatchRepresenter" layoutX="162.0" layoutY="625.0" opacity="0.75" prefHeight="35.0" prefWidth="474.0" promptText="Batch Representer" style="-fx-background-color: #FFFFFF; -fx-background-radius: 10;" />
+                        <AnchorPane layoutX="-1.0" prefHeight="58.0" prefWidth="824.0" style="-fx-background-color: #000428; -fx-background-radius: 20;" />
+                        <AnchorPane layoutX="9.0" layoutY="10.0" prefHeight="35.0" prefWidth="824.0" style="-fx-background-color: #000428; -fx-background-radius: 20;" />
+                        <AnchorPane layoutX="-4.0" prefHeight="847.0" prefWidth="74.0" style="-fx-background-color: #000428; -fx-background-radius: 20;" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="773.0" layoutY="-2.0" prefHeight="840.0" prefWidth="61.0" style="-fx-background-color: #000428; -fx-background-radius: 20;" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="7.0" layoutY="789.0" prefHeight="58.0" prefWidth="824.0" style="-fx-background-color: #000428; -fx-background-radius: 20;" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

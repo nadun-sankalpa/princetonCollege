@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="855.0" prefWidth="848.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.princetoncollege.controller.EditController.EditStudentForm">
+   <children>
+      <AnchorPane layoutX="6.0" prefHeight="865.0" prefWidth="842.0">
+         <children>
+            <AnchorPane fx:id="rootNode" prefHeight="860.0" prefWidth="842.0">
+               <children>
+                  <AnchorPane layoutX="91.0" layoutY="92.0" prefHeight="690.0" prefWidth="652.0" style="-fx-background-color: #DCDCDC; -fx-background-radius: 20;">
+                     <children>
+                        <JFXButton buttonType="RAISED" layoutX="334.0" layoutY="623.0" onAction="#btnEditOnAction" prefHeight="25.0" prefWidth="169.0" style="-fx-background-color: #00FF00;" text="Edit">
+                           <font>
+                              <Font name="Leelawadee UI Bold" size="16.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton buttonType="RAISED" layoutX="115.0" layoutY="623.0" onAction="#btnExitOnAction" prefHeight="0.0" prefWidth="169.0" style="-fx-background-color: #FFD700;" text="Back">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="23.0" fitWidth="22.0">
+                                 <image>
+                                    <Image url="@../images/icons8-back-30.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                        <Text layoutX="35.0" layoutY="186.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student Id" textAlignment="CENTER" wrappingWidth="110.0">
+                           <font>
+                              <Font name="Arial" size="12.0" />
+                           </font>
+                        </Text>
+                        <TextField fx:id="txtStudentId" layoutX="59.0" layoutY="198.0" opacity="0.75" prefHeight="35.0" prefWidth="499.0" promptText="Student Id" style="-fx-background-color: #FFFFFF;" />
+                        <Text layoutX="24.0" layoutY="252.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" textAlignment="CENTER" wrappingWidth="110.0">
+                           <font>
+                              <Font name="Arial" size="12.0" />
+                           </font>
+                        </Text>
+                        <TextField fx:id="txtName" layoutX="59.0" layoutY="262.0" opacity="0.75" prefHeight="35.0" prefWidth="499.0" promptText="Name" style="-fx-background-color: #FFFFFF;" />
+                        <Text layoutX="24.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address" textAlignment="CENTER" wrappingWidth="110.0">
+                           <font>
+                              <Font name="Arial" size="12.0" />
+                           </font>
+                        </Text>
+                        <TextField fx:id="txtAddress" layoutX="59.0" layoutY="329.0" opacity="0.75" prefHeight="35.0" prefWidth="499.0" promptText="Address" style="-fx-background-color: #FFFFFF;" />
+                        <Text layoutX="35.0" layoutY="386.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contact No" textAlignment="CENTER" wrappingWidth="110.0">
+                           <font>
+                              <Font name="Arial" size="12.0" />
+                           </font>
+                        </Text>
+                        <TextField fx:id="txtCno" layoutX="59.0" layoutY="401.0" opacity="0.75" prefHeight="35.0" prefWidth="499.0" promptText="Contact No" style="-fx-background-color: #FFFFFF;" />
+                        <Text layoutX="35.0" layoutY="453.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NIC No" textAlignment="CENTER" wrappingWidth="110.0">
+                           <font>
+                              <Font name="Arial" size="12.0" />
+                           </font>
+                        </Text>
+                        <TextField fx:id="txtNicNo" layoutX="59.0" layoutY="463.0" opacity="0.75" prefHeight="35.0" prefWidth="499.0" promptText="NIC No" style="-fx-background-color: #FFFFFF;" />
+                        <Text layoutX="35.0" layoutY="520.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User ID" textAlignment="CENTER" wrappingWidth="110.0">
+                           <font>
+                              <Font name="Arial" size="12.0" />
+                           </font>
+                        </Text>
+                        <TextField fx:id="txtUserId" layoutX="59.0" layoutY="531.0" opacity="0.75" prefHeight="35.0" prefWidth="499.0" promptText="User ID" style="-fx-background-color: #FFFFFF;" />
+                        <Circle fill="#00dbeb" layoutX="317.0" layoutY="105.0" radius="70.0" stroke="BLACK" strokeType="INSIDE" />
+                        <ImageView fitHeight="107.0" fitWidth="121.0" layoutX="257.0" layoutY="52.0">
+                           <image>
+                              <Image url="@../images/icons8-user-50.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="248.0" layoutY="-15.0" prefHeight="58.0" prefWidth="140.0" text="Edit Student" textFill="#f80000">
+                           <font>
+                              <Font name="Leelawadee UI Bold" size="23.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="58.0" prefWidth="834.0" style="-fx-background-color: #000428; -fx-background-radius: 20;" />
+                  <AnchorPane layoutX="-7.0" layoutY="-201.0" prefHeight="1061.0" prefWidth="70.0" style="-fx-background-color: #000428; -fx-background-radius: 20;" />
+                  <AnchorPane layoutX="-4.0" layoutY="804.0" prefHeight="64.0" prefWidth="842.0" style="-fx-background-color: #000428; -fx-background-radius: 20;" />
+                  <AnchorPane layoutX="772.0" prefHeight="864.0" prefWidth="70.0" style="-fx-background-color: #000428; -fx-background-radius: 20;" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

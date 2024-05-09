@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="774.0" prefWidth="730.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.EditExamForm">
+   <children>
+      <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="769.0" prefWidth="706.0">
+         <children>
+            <AnchorPane prefHeight="766.0" prefWidth="724.0">
+               <children>
+                  <AnchorPane fx:id="rootNode" prefHeight="761.0" prefWidth="707.0">
+                     <children>
+                        <Label layoutX="257.0" layoutY="69.0" prefHeight="58.0" prefWidth="203.0" text="Edit Exam" textFill="#f80000">
+                           <font>
+                              <Font name="Leelawadee UI Bold" size="31.0" />
+                           </font>
+                        </Label>
+                        <AnchorPane layoutX="-10.0" layoutY="-10.0" prefHeight="68.0" prefWidth="734.0" style="-fx-background-color: #000428;" />
+                        <AnchorPane layoutX="-12.0" layoutY="711.0" prefHeight="68.0" prefWidth="734.0" style="-fx-background-color: #000428;" />
+                        <AnchorPane layoutX="-11.0" layoutY="-8.0" prefHeight="781.0" prefWidth="70.0" style="-fx-background-color: #000428;" />
+                        <AnchorPane layoutX="653.0" prefHeight="769.0" prefWidth="70.0" style="-fx-background-color: #000428;" />
+                        <TextField fx:id="txtExamId" layoutX="144.0" layoutY="200.0" opacity="0.75" prefHeight="40.0" prefWidth="418.0" style="-fx-background-color: C0C0C0;" text="Exam Id" />
+                        <TextField fx:id="txtExamName" layoutX="144.0" layoutY="284.0" opacity="0.75" prefHeight="40.0" prefWidth="418.0" style="-fx-background-color: C0C0C0;" text="Exam Name" />
+                        <TextField fx:id="txtDate" layoutX="141.0" layoutY="368.0" opacity="0.75" prefHeight="40.0" prefWidth="418.0" style="-fx-background-color: C0C0C0;" text="Date" />
+                        <Text layoutX="117.0" layoutY="183.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Exam Id" textAlignment="CENTER" wrappingWidth="110.0">
+                           <font>
+                              <Font name="Arial" size="12.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="127.0" layoutY="272.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Exam Name" textAlignment="CENTER" wrappingWidth="110.0">
+                           <font>
+                              <Font name="Arial" size="12.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="107.0" layoutY="354.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date" textAlignment="CENTER" wrappingWidth="110.0">
+                           <font>
+                              <Font name="Arial" size="12.0" />
+                           </font>
+                        </Text>
+                        <JFXButton buttonType="RAISED" layoutX="372.0" layoutY="612.0" onAction="#btnEditOnAction" prefHeight="40.0" prefWidth="177.0" style="-fx-background-color: #00FF00;" text="Edit">
+                           <font>
+                              <Font name="Leelawadee UI Bold" size="16.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton buttonType="RAISED" layoutX="153.0" layoutY="612.0" onAction="#btnExitOnAction" prefHeight="40.0" prefWidth="169.0" style="-fx-background-color: #FFD700;" text="Back">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="23.0" fitWidth="22.0">
+                                 <image>
+                                    <Image url="@../images/icons8-back-30.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                        <TextField fx:id="txtLecturerId" layoutX="141.0" layoutY="540.0" opacity="0.75" prefHeight="40.0" prefWidth="418.0" style="-fx-background-color: C0C0C0;" text="Lecturer ID" />
+                        <TextField fx:id="txtTime" layoutX="141.0" layoutY="454.0" opacity="0.75" prefHeight="40.0" prefWidth="418.0" style="-fx-background-color: C0C0C0;" text="Time" />
+                        <Text layoutX="117.0" layoutY="524.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lecturer ID" textAlignment="CENTER" wrappingWidth="110.0">
+                           <font>
+                              <Font name="Arial" size="12.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="107.0" layoutY="438.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Time" textAlignment="CENTER" wrappingWidth="110.0">
+                           <font>
+                              <Font name="Arial" size="12.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

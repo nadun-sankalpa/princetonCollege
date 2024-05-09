@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.princetoncollege.controller.PaymentFormController">
+   <children>
+      <AnchorPane fx:id="rootNode" prefHeight="822.0" prefWidth="1242.0">
+         <children>
+            <BorderPane fx:id="borderPane" prefHeight="683.0" prefWidth="1077.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <top>
+                  <AnchorPane prefHeight="822.0" prefWidth="1258.0" style="-fx-background-color: #FFFFFF;" BorderPane.alignment="CENTER">
+                     <children>
+                        <AnchorPane layoutX="286.0" layoutY="218.0" prefHeight="591.0" prefWidth="957.0" style="-fx-background-color: #DCDCDC; -fx-background-radius: 20;">
+                           <children>
+                              <TableView fx:id="tblPayment" layoutX="14.0" layoutY="14.0" prefHeight="572.0" prefWidth="930.0">
+                                 <columns>
+                                    <TableColumn fx:id="colPaymentID" prefWidth="97.0" text="Payment ID" />
+                                    <TableColumn fx:id="colAmount" prefWidth="180.0" text="Amount" />
+                                    <TableColumn fx:id="colDate" prefWidth="179.0" text="Date" />
+                                    <TableColumn fx:id="colStudentId" prefWidth="159.0" text="Student ID" />
+                                    <TableColumn fx:id="colUserId" prefWidth="188.0" text="User ID" />
+                                    <TableColumn fx:id="colCourseId" prefWidth="126.0" text="Course ID" />
+                                 </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                        <JFXButton buttonType="RAISED" layoutX="301.0" layoutY="97.0" onAction="#btnExitOnAction" prefHeight="67.0" prefWidth="160.0" style="-fx-background-color: #DEB887;" text="Back">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </JFXButton>
+                        <ImageView fitHeight="25.0" fitWidth="23.0" layoutX="912.0" layoutY="656.0">
+                           <image>
+                              <Image url="@../../../../../../../Downloads/icons8-back-30.png" />
+                           </image>
+                        </ImageView>
+                        <JFXButton buttonType="RAISED" layoutX="486.0" layoutY="97.0" onAction="#btnAddPaymentOnAction" prefHeight="67.0" prefWidth="198.0" style="-fx-background-color: #00FFFF;" text="Add  Payment">
+                           <font>
+                              <Font name="Leelawadee UI Bold" size="14.0" />
+                           </font>
+                        </JFXButton>
+                        <AnchorPane layoutX="283.0" layoutY="7.0" prefHeight="77.0" prefWidth="934.0" style="-fx-background-color: #000428; -fx-background-radius: 20;">
+                           <children>
+                              <Label layoutX="33.0" layoutY="21.0" text="Payments" textFill="WHITE">
+                                 <font>
+                                    <Font name="Leelawadee UI Bold" size="24.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="50.0" fitWidth="77.0" layoutX="733.0" layoutY="11.0">
+                                 <image>
+                                    <Image url="@../images/Princeton-Symbol.png" />
+                                 </image>
+                              </ImageView>
+                              <Text fill="WHITE" layoutX="785.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PRINCETON " textAlignment="CENTER" wrappingWidth="167.0">
+                                 <font>
+                                    <Font name="Franklin Gothic Medium Italic" size="21.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#fffd00" layoutX="795.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="COLLEGE" textAlignment="CENTER" wrappingWidth="147.3125">
+                                 <font>
+                                    <Font name="Franklin Gothic Medium Italic" size="21.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </AnchorPane>
+                        <JFXButton buttonType="RAISED" layoutX="702.0" layoutY="97.0" onAction="#btnDeletePaymentOnAction" prefHeight="67.0" prefWidth="198.0" style="-fx-background-color: #FFD700;" text="Delete Payment">
+                           <font>
+                              <Font name="Leelawadee UI Bold" size="14.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton buttonType="RAISED" layoutX="924.0" layoutY="97.0" onAction="#btnEditPaymentOnAction" prefHeight="67.0" prefWidth="173.0" style="-fx-background-color: #00FF00;" text="Edit Payment">
+                           <font>
+                              <Font name="Leelawadee UI Bold" size="14.0" />
+                           </font>
+                        </JFXButton>
+                        <ImageView layoutX="331.0" layoutY="119.0">
+                           <image>
+                              <Image url="@../images/icons8-back-24.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView layoutX="503.0" layoutY="119.0">
+                           <image>
+                              <Image url="@../images/icons8-add-24.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="28.0" fitWidth="23.0" layoutX="722.0" layoutY="117.0">
+                           <image>
+                              <Image url="@../images/icons8-delete-48.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="28.0" fitWidth="32.0" layoutX="935.0" layoutY="117.0">
+                           <image>
+                              <Image url="@../images/icons8-edit-64.png" />
+                           </image>
+                        </ImageView>
+                     </children></AnchorPane>
+               </top>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="832.0" prefWidth="280.0" style="-fx-background-color: #000428;">
+         <children>
+            <Circle fill="#e0e6eb" layoutX="64.0" layoutY="81.0" opacity="0.61" radius="46.0" stroke="#140f0f" strokeType="INSIDE" />
+            <JFXButton buttonType="RAISED" layoutX="44.0" layoutY="191.0" onAction="#btnAttendanceOnAction" prefHeight="39.0" prefWidth="198.0" style="-fx-background-color: #00FF7F; -fx-background-radius: 12;" text="Attendance">
+               <font>
+                  <Font name="Leelawadee UI Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="44.0" layoutY="424.0" onAction="#btnExamsOnAction" prefHeight="39.0" prefWidth="198.0" style="-fx-background-color: #00FF7F; -fx-background-radius: 12;" text="Exams">
+               <font>
+                  <Font name="Leelawadee UI Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="44.0" layoutY="366.0" onAction="#btnScheduleOnAction" prefHeight="39.0" prefWidth="198.0" style="-fx-background-color: #00FF7F; -fx-background-radius: 12;" text="Schedule">
+               <font>
+                  <Font name="Leelawadee UI Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="44.0" layoutY="309.0" onAction="#btnStudentsOnAction" prefHeight="39.0" prefWidth="198.0" style="-fx-background-color: #00FF7F; -fx-background-radius: 12;" text="Students">
+               <font>
+                  <Font name="Leelawadee UI Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="44.0" layoutY="249.0" onAction="#btnLecturersOnAction" prefHeight="39.0" prefWidth="198.0" style="-fx-background-color: #00FF7F; -fx-background-radius: 12;" text="Lecturers">
+               <font>
+                  <Font name="Leelawadee UI Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="50.0" layoutY="733.0" onAction="#btnLogOutOnAction" prefHeight="33.0" prefWidth="186.0" style="-fx-background-color: #DC143C; -fx-background-radius: 20;" text="Log Out" textFill="WHITE">
+               <font>
+                  <Font name="Leelawadee UI Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="44.0" layoutY="539.0" onAction="#btnPaymentOnAction" prefHeight="39.0" prefWidth="198.0" style="-fx-background-color: #00FF7F; -fx-background-radius: 12;" text="Payment">
+               <font>
+                  <Font name="Leelawadee UI Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="44.0" layoutY="481.0" onAction="#btnBatchesOnAction" prefHeight="39.0" prefWidth="198.0" style="-fx-background-color: #00FF7F; -fx-background-radius: 12;" text="Batches">
+               <font>
+                  <Font name="Leelawadee UI Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="44.0" layoutY="597.0" onAction="#btnCorsesOnAction" prefHeight="39.0" prefWidth="198.0" style="-fx-background-color: #00FF7F; -fx-background-radius: 12;" text="Courses">
+               <font>
+                  <Font name="Leelawadee UI Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="44.0" layoutY="653.0" onAction="#btnEmployesOnAction" prefHeight="39.0" prefWidth="198.0" style="-fx-background-color: #00FF7F; -fx-background-radius: 12;" text="Employes">
+               <font>
+                  <Font name="Leelawadee UI Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <AnchorPane layoutX="7.0" layoutY="21.0" opacity="0.23" prefHeight="122.0" prefWidth="262.0" style="-fx-background-color: #DCDCDC; -fx-background-radius: 20;" />
+            <ImageView fitHeight="67.0" fitWidth="76.0" layoutX="26.0" layoutY="48.0">
+               <image>
+                  <Image url="@../images/icons8-user-50.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="139.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome!" wrappingWidth="111.0">
+               <font>
+                  <Font name="Leelawadee UI Bold" size="21.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="28.0" fitWidth="26.0" layoutX="64.0" layoutY="197.0">
+               <image>
+                  <Image url="@../images/icons8-check-book-50.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="36.0" fitWidth="36.0" layoutX="59.0" layoutY="311.0">
+               <image>
+                  <Image url="@../images/icons8-student-80.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="29.0" fitWidth="30.0" layoutX="62.0" layoutY="254.0">
+               <image>
+                  <Image url="@../images/icons8-lecturer-50.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="27.0" fitWidth="26.0" layoutX="64.0" layoutY="372.0">
+               <image>
+                  <Image url="@../images/icons8-schedule-64.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="27.0" fitWidth="27.0" layoutX="64.0" layoutY="430.0">
+               <image>
+                  <Image url="@../images/icons8-exams-for-commerce-and-economics-students-24.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="31.0" fitWidth="31.0" layoutX="62.0" layoutY="485.0">
+               <image>
+                  <Image url="@../images/icons8-multiple-users-50.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="33.0" fitWidth="35.0" layoutX="60.0" layoutY="542.0">
+               <image>
+                  <Image url="@../images/icons8-payment-50.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="28.0" fitWidth="31.0" layoutX="62.0" layoutY="603.0">
+               <image>
+                  <Image url="@../images/icons8-courses-64.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="32.0" fitWidth="36.0" layoutX="60.0" layoutY="657.0">
+               <image>
+                  <Image url="@../images/icons8-employee-50.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="29.0" fitWidth="30.0" layoutX="75.0" layoutY="735.0">
+               <image>
+                  <Image url="@../images/icons8-log-out-50.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

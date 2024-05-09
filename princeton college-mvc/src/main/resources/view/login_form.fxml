@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="rootNode" prefHeight="682.0" prefWidth="1061.0" style="-fx-background-radius: 20;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.princetoncollege.controller.LoginFormController">
+   <children>
+      <AnchorPane layoutX="483.0" layoutY="13.0" opacity="0.52" prefHeight="656.0" prefWidth="567.0" style="-fx-background-color: #000000; -fx-background-radius: 20;" />
+      <TextField fx:id="txtUserId" layoutX="559.0" layoutY="276.0" opacity="0.58" prefHeight="46.0" prefWidth="427.0" promptText="User ID" style="-fx-background-color: #FFFFFF; -fx-background-radius: 10;" />
+      <TextField fx:id="txtPassword" layoutX="559.0" layoutY="381.0" opacity="0.59" prefHeight="46.0" prefWidth="427.0" promptText="Password" style="-fx-background-color: #FFFFFF; -fx-background-radius: 10;" />
+      <AnchorPane prefHeight="682.0" prefWidth="472.0" style="-fx-background-color: #000428; -fx-background-radius: 0;" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="288.0" fitWidth="452.0" layoutY="125.0">
+               <image>
+                  <Image url="@../images/Princeton-Symbol.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="85.0" layoutY="485.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PRINCETON " textAlignment="CENTER" wrappingWidth="302.0">
+               <font>
+                  <Font name="Franklin Gothic Medium Italic" size="56.0" />
+               </font>
+            </Text>
+            <Text fill="#dfff00" layoutX="129.0" layoutY="543.0" strokeType="OUTSIDE" strokeWidth="0.0" text="COLLEGE" textAlignment="CENTER" wrappingWidth="193.3125">
+               <font>
+                  <Font name="Franklin Gothic Medium Italic" size="48.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <Text fx:id="loginTxt" fill="#05094d" layoutX="648.0" layoutY="161.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LOGIN" textAlignment="CENTER" wrappingWidth="207.0">
+         <font>
+            <Font name="Arial Black" size="39.0" />
+         </font>
+      </Text>
+      <Text layoutX="530.0" layoutY="253.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Id" textAlignment="CENTER" wrappingWidth="110.0">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="539.0" layoutY="359.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" textAlignment="CENTER" wrappingWidth="110.0">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </Text>
+      <JFXButton buttonType="RAISED" layoutX="585.0" layoutY="492.0" onAction="#btnLoginOnAction" prefHeight="45.0" prefWidth="371.0" style="-fx-background-color: #00FF7F; -fx-background-radius: 10;" text="Login">
+         <font>
+            <Font name="Leelawadee UI Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="711.0" layoutY="554.0" text="Don't have an account?" textFill="#fdfeff" />
+      <Hyperlink layoutX="724.0" layoutY="580.0" onAction="#linkRegistrationOnAction" prefHeight="23.0" prefWidth="95.0" text="Register on here" textFill="#00db04" />
+   </children>
+</AnchorPane>
