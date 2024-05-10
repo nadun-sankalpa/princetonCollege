@@ -51,12 +51,12 @@ public class PaymentRepo {
     public static String getnextPaymentId() throws SQLException {
         String nextId =null;
         int id=0;
-        String sql = "select student_id from student order by student_id desc limit 1";
+        String sql = "select payment_id from payment order by payment_id desc limit 1";
         Connection connection = DbConnection.getInstance().getConnection();
         PreparedStatement pstm = connection.prepareStatement(sql);
         ResultSet resultSet = pstm.executeQuery();
         if (resultSet.next()){
-            id = Integer.parseInt(resultSet.getString("student_id"));
+            id = Integer.parseInt(resultSet.getString("payment_id"));
             id++;
         }
         return nextId = String.valueOf(id);
