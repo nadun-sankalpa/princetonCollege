@@ -9,7 +9,12 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
 <?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
@@ -19,7 +24,7 @@
          <children>
             <BorderPane fx:id="borderPane" prefHeight="683.0" prefWidth="1077.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                <center>
-                  <AnchorPane prefHeight="631.0" prefWidth="929.0" style="-fx-background-color: #FFFFFF;" BorderPane.alignment="CENTER">
+                  <AnchorPane prefHeight="832.0" prefWidth="983.0" style="-fx-background-color: #FFFAF0;" BorderPane.alignment="CENTER">
                      <children>
                         <AnchorPane layoutX="296.0" layoutY="210.0" prefHeight="608.0" prefWidth="957.0" style="-fx-background-color: #DCDCDC; -fx-background-radius: 20;">
                            <children>
@@ -47,7 +52,7 @@
                               <Image url="@../../../../../../../Downloads/icons8-back-30.png" />
                            </image>
                         </ImageView>
-                        <JFXButton buttonType="RAISED" layoutX="479.0" layoutY="107.0" onAction="#btnAddEmployeeOnAction" prefHeight="61.0" prefWidth="186.0" style="-fx-background-color: #00FFFF;" text="Add Employee">
+                        <JFXButton buttonType="RAISED" layoutX="479.0" layoutY="107.0" onAction="#btnAddEmployeeOnAction" prefHeight="61.0" prefWidth="186.0" style="-fx-background-color: #D2691E;" text="Add Employee" textFill="#1b1a1a">
                            <font>
                               <Font name="Leelawadee UI Bold" size="14.0" />
                            </font>
@@ -81,7 +86,7 @@
                               <Font name="Leelawadee UI Bold" size="14.0" />
                            </font>
                         </JFXButton>
-                        <JFXButton buttonType="RAISED" layoutX="899.0" layoutY="108.0" onAction="#btnEditEmployeOnAction" prefHeight="60.0" prefWidth="181.0" style="-fx-background-color: #00FF00;" text="Edit Emploee">
+                        <JFXButton buttonType="RAISED" layoutX="899.0" layoutY="108.0" onAction="#btnEditEmployeOnAction" prefHeight="60.0" prefWidth="181.0" style="-fx-background-color: #1E90FF;" text="Edit Emploee" textFill="#111111">
                            <font>
                               <Font name="Leelawadee UI Bold" size="14.0" />
                            </font>
@@ -114,28 +119,62 @@
       </AnchorPane>
       <AnchorPane layoutX="-3.0" prefHeight="832.0" prefWidth="283.0" style="-fx-background-color: #000428;">
          <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="832.0" layoutY="-1.0" strokeType="INSIDE" style="-fx-background-color: #1E90FF #1E90FF;" width="283.0">
+               <stroke>
+                  <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.03692637383937836" green="0.029300682246685028" blue="0.4868420958518982" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </RadialGradient>
+               </stroke>
+               <fill>
+                  <LinearGradient endY="0.8293838862559242" startY="0.5971563981042654">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.011932464316487312" green="0.007005360443145037" blue="0.30263158679008484" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Rectangle>
             <Circle fill="#e0e6eb" layoutX="64.0" layoutY="81.0" opacity="0.61" radius="46.0" stroke="#140f0f" strokeType="INSIDE" />
-            <JFXButton buttonType="RAISED" layoutX="44.0" layoutY="191.0" onAction="#btnAttendanceOnAction" prefHeight="39.0" prefWidth="198.0" style="-fx-background-color: #00FF7F; -fx-background-radius: 12;" text="Attendance">
+            <JFXButton buttonType="RAISED" layoutX="44.0" layoutY="191.0" onAction="#btnAttendanceOnAction" prefHeight="39.0" prefWidth="198.0" style="-fx-background-color: #1E90FF #1E90FF; -fx-background-radius: 12;" text="Attendance" textFill="#0d0d0d">
                <font>
                   <Font name="Leelawadee UI Bold" size="15.0" />
                </font>
             </JFXButton>
-            <JFXButton buttonType="RAISED" layoutX="44.0" layoutY="424.0" onAction="#btnExamsOnAction" prefHeight="39.0" prefWidth="198.0" style="-fx-background-color: #00FF7F; -fx-background-radius: 12;" text="Exams">
+            <JFXButton buttonType="RAISED" layoutX="44.0" layoutY="424.0" onAction="#btnExamsOnAction" prefHeight="39.0" prefWidth="198.0" style="-fx-background-color: #1E90FF #1E90FF; -fx-background-radius: 12;" text="Exams" textFill="#0d0d0d">
                <font>
                   <Font name="Leelawadee UI Bold" size="15.0" />
                </font>
             </JFXButton>
-            <JFXButton buttonType="RAISED" layoutX="44.0" layoutY="366.0" onAction="#btnScheduleOnAction" prefHeight="39.0" prefWidth="198.0" style="-fx-background-color: #00FF7F; -fx-background-radius: 12;" text="Schedule">
+            <JFXButton buttonType="RAISED" layoutX="44.0" layoutY="366.0" onAction="#btnScheduleOnAction" prefHeight="39.0" prefWidth="198.0" style="-fx-background-color: #1E90FF #1E90FF; -fx-background-radius: 12;" text="Schedule" textFill="#0d0d0d">
                <font>
                   <Font name="Leelawadee UI Bold" size="15.0" />
                </font>
             </JFXButton>
-            <JFXButton buttonType="RAISED" layoutX="44.0" layoutY="309.0" onAction="#btnStudentsOnAction" prefHeight="39.0" prefWidth="198.0" style="-fx-background-color: #00FF7F; -fx-background-radius: 12;" text="Students">
+            <JFXButton buttonType="RAISED" layoutX="44.0" layoutY="309.0" onAction="#btnStudentsOnAction" prefHeight="39.0" prefWidth="198.0" style="-fx-background-color: #1E90FF #1E90FF; -fx-background-radius: 12;" text="Students" textFill="#0d0d0d">
                <font>
                   <Font name="Leelawadee UI Bold" size="15.0" />
                </font>
             </JFXButton>
-            <JFXButton buttonType="RAISED" layoutX="44.0" layoutY="249.0" onAction="#btnLecturersOnAction" prefHeight="39.0" prefWidth="198.0" style="-fx-background-color: #00FF7F; -fx-background-radius: 12;" text="Lecturers">
+            <JFXButton buttonType="RAISED" layoutX="44.0" layoutY="249.0" onAction="#btnLecturersOnAction" prefHeight="39.0" prefWidth="198.0" style="-fx-background-color: #1E90FF #1E90FF; -fx-background-radius: 12;" text="Lecturers" textFill="#0d0d0d">
                <font>
                   <Font name="Leelawadee UI Bold" size="15.0" />
                </font>
@@ -145,22 +184,22 @@
                   <Font name="Leelawadee UI Bold" size="15.0" />
                </font>
             </JFXButton>
-            <JFXButton buttonType="RAISED" layoutX="44.0" layoutY="539.0" onAction="#btnPaymentOnAction" prefHeight="39.0" prefWidth="198.0" style="-fx-background-color: #00FF7F; -fx-background-radius: 12;" text="Payment">
+            <JFXButton buttonType="RAISED" layoutX="44.0" layoutY="539.0" onAction="#btnPaymentOnAction" prefHeight="39.0" prefWidth="198.0" style="-fx-background-color: #1E90FF #1E90FF; -fx-background-radius: 12;" text="Payment" textFill="#0d0d0d">
                <font>
                   <Font name="Leelawadee UI Bold" size="15.0" />
                </font>
             </JFXButton>
-            <JFXButton buttonType="RAISED" layoutX="44.0" layoutY="481.0" onAction="#btnBatchesOnAction" prefHeight="39.0" prefWidth="198.0" style="-fx-background-color: #00FF7F; -fx-background-radius: 12;" text="Batches">
+            <JFXButton buttonType="RAISED" layoutX="44.0" layoutY="481.0" onAction="#btnBatchesOnAction" prefHeight="39.0" prefWidth="198.0" style="-fx-background-color: #1E90FF #1E90FF; -fx-background-radius: 12;" text="Batches" textFill="#0d0d0d">
                <font>
                   <Font name="Leelawadee UI Bold" size="15.0" />
                </font>
             </JFXButton>
-            <JFXButton buttonType="RAISED" layoutX="44.0" layoutY="597.0" onAction="#btnCorsesOnAction" prefHeight="39.0" prefWidth="198.0" style="-fx-background-color: #00FF7F; -fx-background-radius: 12;" text="Courses">
+            <JFXButton buttonType="RAISED" layoutX="44.0" layoutY="597.0" onAction="#btnCorsesOnAction" prefHeight="39.0" prefWidth="198.0" style="-fx-background-color: #1E90FF #1E90FF; -fx-background-radius: 12;" text="Courses" textFill="#0d0d0d">
                <font>
                   <Font name="Leelawadee UI Bold" size="15.0" />
                </font>
             </JFXButton>
-            <JFXButton buttonType="RAISED" layoutX="44.0" layoutY="653.0" onAction="#btnEmployesOnAction" prefHeight="39.0" prefWidth="198.0" style="-fx-background-color: #00FF7F; -fx-background-radius: 12;" text="Employes">
+            <JFXButton buttonType="RAISED" layoutX="44.0" layoutY="653.0" onAction="#btnEmployesOnAction" prefHeight="39.0" prefWidth="198.0" style="-fx-background-color: #1E90FF #1E90FF; -fx-background-radius: 12;" text="Employes" textFill="#0d0d0d">
                <font>
                   <Font name="Leelawadee UI Bold" size="15.0" />
                </font>
