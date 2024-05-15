@@ -9,12 +9,18 @@ import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import lk.ijse.princetoncollege.db.DbConnection;
+import net.sf.jasperreports.engine.*;
+import net.sf.jasperreports.engine.design.JasperDesign;
+import net.sf.jasperreports.engine.xml.JRXmlLoader;
+import net.sf.jasperreports.view.JasperViewer;
 
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Objects;
 
 public class AddPaymentForm {
@@ -41,7 +47,7 @@ public class AddPaymentForm {
     private TextField txtUserID;
 
     @FXML
-    void btnAddOnAction(ActionEvent event) {
+    void btnAddOnAction(ActionEvent event) throws JRException, SQLException {
         String payment_id = txtPaymentId.getText();
         String amount = txtAmount.getText();
         String date = txtDate.getText();
@@ -50,6 +56,24 @@ public class AddPaymentForm {
         String course_id = txtCourseId.getText();
 
         saveUser(payment_id, amount,date,student_id,user_id, course_id);
+
+        JasperDesign jasperDesign =
+                 JRXmlLoader.load(getClass().getResourceAsStream("/Report/PaymentReport.jrxml"));
+
+        JasperReport jasperReport =
+                JasperCompileManager.compileReport(jasperDesign);
+
+        Map<String, Object> data = new HashMap<>();
+        data.put("CustomerID",txtStudentId.getText());
+        data.put("NetTotal","3000");
+
+        JasperPrint jasperPrint =
+                JasperFillManager.fillReport(
+                        jasperReport,
+                        data,
+                        DbConnection.getInstance().getConnection());
+
+        JasperViewer.viewReport(jasperPrint,false);
 
     }
 

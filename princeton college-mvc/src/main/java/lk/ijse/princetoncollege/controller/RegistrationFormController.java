@@ -9,6 +9,9 @@ import lk.ijse.princetoncollege.db.DbConnection;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
+import java.util.regex.Pattern;
+
+import javafx.scene.input.KeyEvent;
 
 public class RegistrationFormController {
 
@@ -26,6 +29,30 @@ public class RegistrationFormController {
 
     @FXML
     private TextField txtUserId;
+
+    @FXML
+    void txtCnoOnKeyReleasedAction(KeyEvent event) {
+        Pattern phonePattern = Pattern.compile( "^([+]94{1,3}|[0])([1-9]{2})([0-9]){7}$");
+        if(!phonePattern.matcher(txtCno.getText()).matches()){
+            addError(txtCno);
+
+        }else{
+            removeError(txtCno);
+        }
+
+    }
+
+    @FXML
+    void txtUserIdReleaseOnAction(KeyEvent event) {
+        Pattern IDPattern = Pattern.compile("^([A-Z0-9])$");
+        if(!IDPattern.matcher(txtUserId.getText()).matches()){
+            addError(txtUserId);
+
+        }else{
+            removeError(txtUserId);
+        }
+
+    }
 
     @FXML
     void btnRegister(ActionEvent event) {
@@ -59,6 +86,14 @@ public class RegistrationFormController {
             new Alert(Alert.AlertType.ERROR, "something happend!").show();
             e.printStackTrace();
         }
+    }
+    private void removeError(TextField textField) {
+        textField.setStyle("-fx-border-color: green");
+
+    }
+
+    private void addError(TextField textField) {
+        textField.setStyle("-fx-border-color: red");
     }
 
 }

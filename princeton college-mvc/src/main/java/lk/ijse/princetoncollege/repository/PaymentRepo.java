@@ -1,5 +1,6 @@
 package lk.ijse.princetoncollege.repository;
 
+import javafx.scene.chart.XYChart;
 import lk.ijse.princetoncollege.db.DbConnection;
 import lk.ijse.princetoncollege.model.Payment;
 import lk.ijse.princetoncollege.model.Student;
@@ -102,6 +103,22 @@ public class PaymentRepo {
         pstm.setObject(6,payment.getPaymentID());
 
         return pstm.executeUpdate() > 0;
+
+    }
+
+    public static XYChart.Series IncomeChart(XYChart.Series chart) {
+        String sql = "SELECT date , SUM(amount) FROM payment GROUP BY date ORDER BY TIMESTAMP(date)";
+
+        try {
+            ResultSet resultSet = DbConnection.getInstance().getConnection().prepareStatement(sql).executeQuery();
+
+            while (resultSet.next()) {
+                chart.getData().add(new XYChart.Data<>(resultSet.getString(1), resultSet.getFloat(2)));
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return chart;
 
     }
 }

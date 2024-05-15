@@ -4,12 +4,15 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.chart.BarChart;
+import javafx.scene.chart.XYChart;
 import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import lk.ijse.princetoncollege.db.DbConnection;
+import lk.ijse.princetoncollege.repository.PaymentRepo;
 
 import java.io.IOException;
 import java.sql.Connection;
@@ -37,11 +40,26 @@ public class DashboardFormController {
 
     @FXML
     private Text lblUserName;
+    @FXML
+    private BarChart<?, ?> IncomeChart;
 
     @FXML
     private AnchorPane rootNode;
 
+    private void IncomeChart(){
+        IncomeChart.getData().clear();
+
+        XYChart.Series chart = new XYChart.Series();
+
+        XYChart.Series series = PaymentRepo.IncomeChart(chart);
+
+        IncomeChart.getData().add(series);
+
+
+    }
+
     public void initialize() {
+        IncomeChart();
         try {
             int studentCount = getStudentCount();
             setStudentCount(studentCount);

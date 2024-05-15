@@ -340,7 +340,7 @@
                   </AnchorPane>
                   <AnchorPane layoutX="14.0" layoutY="320.0" prefHeight="470.0" prefWidth="443.0" style="-fx-background-color: #DCDCDC; -fx-background-radius: 20;">
                      <children>
-                        <BarChart layoutX="-1.0" layoutY="80.0">
+                        <BarChart fx:id="IncomeChart" layoutX="-1.0" layoutY="80.0" title="Income Chart">
                           <xAxis>
                             <CategoryAxis side="BOTTOM" />
                           </xAxis>
@@ -348,31 +348,6 @@
                             <NumberAxis side="LEFT" />
                           </yAxis>
                         </BarChart>
-                        <ImageView fitHeight="323.0" fitWidth="401.0" layoutX="58.0" layoutY="118.0">
-                           <image>
-                              <Image url="@../images/ro0L3-removebg-preview.png" />
-                           </image>
-                        </ImageView>
-                        <Text fill="#030303" layoutX="38.0" layoutY="462.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Day 1" textAlignment="CENTER" wrappingWidth="125.3125">
-                           <font>
-                              <Font name="Leelawadee UI Bold" size="15.0" />
-                           </font>
-                        </Text>
-                        <Text fill="#030303" layoutX="142.0" layoutY="461.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Day 2" textAlignment="CENTER" wrappingWidth="125.3125">
-                           <font>
-                              <Font name="Leelawadee UI Bold" size="15.0" />
-                           </font>
-                        </Text>
-                        <Text fill="#030303" layoutX="249.0" layoutY="461.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Day 3" textAlignment="CENTER" wrappingWidth="125.3125">
-                           <font>
-                              <Font name="Leelawadee UI Bold" size="15.0" />
-                           </font>
-                        </Text>
-                        <Text fill="#030303" layoutX="350.0" layoutY="462.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Day 4" textAlignment="CENTER" wrappingWidth="125.3125">
-                           <font>
-                              <Font name="Leelawadee UI Bold" size="15.0" />
-                           </font>
-                        </Text>
                         <Text fill="#e80202" layoutX="136.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Attendance Chart" textAlignment="CENTER" wrappingWidth="225.3125">
                            <font>
                               <Font name="Leelawadee UI Bold" size="21.0" />
