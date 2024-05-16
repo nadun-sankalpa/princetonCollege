@@ -340,7 +340,7 @@
                   </AnchorPane>
                   <AnchorPane layoutX="14.0" layoutY="320.0" prefHeight="470.0" prefWidth="443.0" style="-fx-background-color: #DCDCDC; -fx-background-radius: 20;">
                      <children>
-                        <BarChart fx:id="IncomeChart" layoutX="-1.0" layoutY="80.0" title="Income Chart">
+                        <BarChart fx:id="IncomeChart" layoutX="-1.0" layoutY="80.0" style="-fx-background-insets: #1E90FF;" title="Income Chart">
                           <xAxis>
                             <CategoryAxis side="BOTTOM" />
                           </xAxis>

@@ -15,7 +15,7 @@
    <children>
       <AnchorPane fx:id="rootNode" prefHeight="761.0" prefWidth="707.0">
          <children>
-            <AnchorPane layoutX="102.0" layoutY="62.0" prefHeight="771.0" prefWidth="652.0" style="-fx-background-color: #DCDCDC; -fx-background-radius: 20;">
+            <AnchorPane layoutX="102.0" layoutY="67.0" prefHeight="766.0" prefWidth="652.0" style="-fx-background-color: #DCDCDC; -fx-background-radius: 20;">
                <children>
                   <JFXButton buttonType="RAISED" layoutX="335.0" layoutY="722.0" onAction="#btnAddOnAction" prefHeight="25.0" prefWidth="169.0" style="-fx-background-color: #00FF00;" text="Add">
                      <font>
@@ -37,49 +37,49 @@
                         </ImageView>
                      </graphic>
                   </JFXButton>
-                  <TextField fx:id="txtInitialPayment" layoutX="59.0" layoutY="600.0" opacity="0.75" prefHeight="35.0" prefWidth="499.0" promptText="Initial Payment" style="-fx-background-color: #FFFFFF;" />
+                  <TextField fx:id="txtInitialPayment" layoutX="59.0" layoutY="600.0" onKeyReleased="#txtInitialPaymentReleasedOnAction" opacity="0.75" prefHeight="35.0" prefWidth="499.0" promptText="Initial Payment" style="-fx-background-color: #FFFFFF;" />
                   <Text layoutX="35.0" layoutY="186.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student Id" textAlignment="CENTER" wrappingWidth="110.0">
                      <font>
                         <Font name="Arial" size="12.0" />
                      </font>
                   </Text>
-                  <TextField fx:id="txtStudentId" layoutX="59.0" layoutY="198.0" opacity="0.75" prefHeight="35.0" prefWidth="499.0" promptText="Student Id" style="-fx-background-color: #FFFFFF;" />
+                  <TextField fx:id="txtStudentId" layoutX="59.0" layoutY="198.0" onKeyReleased="#txtStudentIdReleasedOnAction" opacity="0.75" prefHeight="35.0" prefWidth="499.0" promptText="Student Id" style="-fx-background-color: #FFFFFF;" />
                   <Text layoutX="24.0" layoutY="252.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" textAlignment="CENTER" wrappingWidth="110.0">
                      <font>
                         <Font name="Arial" size="12.0" />
                      </font>
                   </Text>
-                  <TextField fx:id="txtName" layoutX="59.0" layoutY="262.0" opacity="0.75" prefHeight="35.0" prefWidth="499.0" promptText="Name" style="-fx-background-color: #FFFFFF;" />
+                  <TextField fx:id="txtName" layoutX="59.0" layoutY="262.0" onKeyReleased="#txtNameReleasedOnAction" opacity="0.75" prefHeight="35.0" prefWidth="499.0" promptText="Name" style="-fx-background-color: #FFFFFF;" />
                   <Text layoutX="24.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address" textAlignment="CENTER" wrappingWidth="110.0">
                      <font>
                         <Font name="Arial" size="12.0" />
                      </font>
                   </Text>
-                  <TextField fx:id="txtAddress" layoutX="59.0" layoutY="329.0" opacity="0.75" prefHeight="35.0" prefWidth="499.0" promptText="Address" style="-fx-background-color: #FFFFFF;" />
+                  <TextField fx:id="txtAddress" layoutX="59.0" layoutY="329.0" onKeyReleased="#txtAddressReleasedOnAction" opacity="0.75" prefHeight="35.0" prefWidth="499.0" promptText="Address" style="-fx-background-color: #FFFFFF;" />
                   <Text layoutX="35.0" layoutY="386.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contact No" textAlignment="CENTER" wrappingWidth="110.0">
                      <font>
                         <Font name="Arial" size="12.0" />
                      </font>
                   </Text>
-                  <TextField fx:id="txtCno" layoutX="59.0" layoutY="401.0" opacity="0.75" prefHeight="35.0" prefWidth="499.0" promptText="Contact No" style="-fx-background-color: #FFFFFF;" />
+                  <TextField fx:id="txtCno" layoutX="59.0" layoutY="401.0" onKeyReleased="#txtContactNoReleasedOnAction" opacity="0.75" prefHeight="35.0" prefWidth="499.0" promptText="Contact No" style="-fx-background-color: #FFFFFF;" />
                   <Text layoutX="35.0" layoutY="453.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NIC No" textAlignment="CENTER" wrappingWidth="110.0">
                      <font>
                         <Font name="Arial" size="12.0" />
                      </font>
                   </Text>
-                  <TextField fx:id="txtNicNo" layoutX="59.0" layoutY="463.0" opacity="0.75" prefHeight="35.0" prefWidth="499.0" promptText="NIC No" style="-fx-background-color: #FFFFFF;" />
+                  <TextField fx:id="txtNicNo" layoutX="59.0" layoutY="463.0" onKeyReleased="#txtNicNoReleasedOnAction" opacity="0.75" prefHeight="35.0" prefWidth="499.0" promptText="NIC No" style="-fx-background-color: #FFFFFF;" />
                   <Text layoutX="35.0" layoutY="520.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User ID" textAlignment="CENTER" wrappingWidth="110.0">
                      <font>
                         <Font name="Arial" size="12.0" />
                      </font>
                   </Text>
-                  <TextField fx:id="txtUserId" layoutX="59.0" layoutY="531.0" opacity="0.75" prefHeight="35.0" prefWidth="499.0" promptText="User ID" style="-fx-background-color: #FFFFFF;" />
+                  <TextField fx:id="txtUserId" layoutX="59.0" layoutY="531.0" onKeyReleased="#txtUserIdReleasedOnAction" opacity="0.75" prefHeight="35.0" prefWidth="499.0" promptText="User ID" style="-fx-background-color: #FFFFFF;" />
                   <Text layoutX="43.0" layoutY="589.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Initial Payment" textAlignment="CENTER" wrappingWidth="110.0">
                      <font>
                         <Font name="Arial" size="12.0" />
                      </font>
                   </Text>
-                  <TextField fx:id="txtCourseId" layoutX="59.0" layoutY="666.0" opacity="0.75" prefHeight="35.0" prefWidth="499.0" promptText="Course ID" style="-fx-background-color: #FFFFFF;" />
+                  <TextField fx:id="txtCourseId" layoutX="59.0" layoutY="666.0" onKeyReleased="#txtCourseIdReleasedOnAction" opacity="0.75" prefHeight="35.0" prefWidth="499.0" promptText="Course ID" style="-fx-background-color: #FFFFFF;" />
                   <Text layoutX="35.0" layoutY="656.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Course ID" textAlignment="CENTER" wrappingWidth="110.0">
                      <font>
                         <Font name="Arial" size="12.0" />

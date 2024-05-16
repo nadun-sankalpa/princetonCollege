@@ -44,7 +44,7 @@ public class RegistrationFormController {
 
     @FXML
     void txtUserIdReleaseOnAction(KeyEvent event) {
-        Pattern IDPattern = Pattern.compile("^([A-Z0-9])$");
+        Pattern IDPattern = Pattern.compile("^U\\d{3}$");
         if(!IDPattern.matcher(txtUserId.getText()).matches()){
             addError(txtUserId);
 
@@ -62,8 +62,33 @@ public class RegistrationFormController {
         String address = txtAddress.getText();
         String cno = txtCno.getText();
 
-        saveUser(user_id, name, pw,address,cno);
+        Pattern phonePattern = Pattern.compile( "^([+]94{1,3}|[0])([1-9]{2})([0-9]){7}$");
+        Pattern IDPattern = Pattern.compile("^U\\d{3}$");
+        if (isValidInput(IDPattern,phonePattern)) {
 
+            saveUser(user_id, name, pw, address, cno);
+        }
+
+    }
+
+    private boolean isValidInput(Pattern idPattern, Pattern phonePattern) {
+        boolean isValid = true;
+        if(!idPattern.matcher(txtUserId.getText()).matches()){
+            addError(txtUserId);
+            isValid =false;
+
+        }else{
+            removeError(txtUserId);
+        }
+
+        if(!phonePattern.matcher(txtCno.getText()).matches()){
+            addError(txtCno);
+            isValid = false;
+
+        }else{
+            removeError(txtCno);
+        }
+        return isValid;
     }
 
     private void saveUser(String user_id, String name, String pw, String address, String cno) {
