@@ -22,19 +22,19 @@
                         <Font name="Leelawadee UI Bold" size="23.0" />
                      </font>
                   </Label>
-                  <AnchorPane prefHeight="46.0" prefWidth="697.0" style="-fx-background-color: CC0000;" />
-                  <AnchorPane layoutX="-2.0" layoutY="717.0" prefHeight="58.0" prefWidth="719.0" style="-fx-background-color: CC0000;" />
-                  <AnchorPane layoutX="-2.0" prefHeight="751.0" prefWidth="61.0" style="-fx-background-color: CC0000;" />
-                  <AnchorPane layoutX="648.0" prefHeight="775.0" prefWidth="74.0" style="-fx-background-color: CC0000;" />
+                  <AnchorPane prefHeight="46.0" prefWidth="697.0" style="-fx-background-color: #000428;" />
+                  <AnchorPane layoutX="-2.0" layoutY="717.0" prefHeight="58.0" prefWidth="719.0" style="-fx-background-color: #000428;" />
+                  <AnchorPane layoutX="-2.0" prefHeight="751.0" prefWidth="61.0" style="-fx-background-color: #000428;" />
+                  <AnchorPane layoutX="648.0" prefHeight="775.0" prefWidth="74.0" style="-fx-background-color: #000428;" />
                   <Circle fill="#e4eb00" layoutX="341.0" layoutY="167.0" radius="70.0" stroke="BLACK" strokeType="INSIDE" />
                   <ImageView fitHeight="107.0" fitWidth="121.0" layoutX="275.0" layoutY="109.0">
                      <image>
                         <Image url="@../images/icons8-user-50.png" />
                      </image>
                   </ImageView>
-                  <TextField fx:id="txtEmployeeId" layoutX="163.0" layoutY="277.0" opacity="0.75" prefHeight="35.0" prefWidth="385.0" style="-fx-background-color: C0C0C0;" text="Employee Id" />
-                  <TextField fx:id="txtEmployeeName" layoutX="162.0" layoutY="348.0" opacity="0.75" prefHeight="35.0" prefWidth="385.0" style="-fx-background-color: C0C0C0;" text="Employee Name" />
-                  <TextField fx:id="txtContactNo" layoutX="160.0" layoutY="490.0" opacity="0.75" prefHeight="35.0" prefWidth="385.0" style="-fx-background-color: C0C0C0;" text="Address" />
+                  <TextField fx:id="txtEmployeeId" layoutX="163.0" layoutY="277.0" onKeyReleased="#txtEmployeeIdReleasedOnAction" opacity="0.75" prefHeight="35.0" prefWidth="385.0" promptText="Employee Id" style="-fx-background-color: C0C0C0;" />
+                  <TextField fx:id="txtEmployeeName" layoutX="162.0" layoutY="348.0" onKeyReleased="#txtNameReleasedOnAction" opacity="0.75" prefHeight="35.0" prefWidth="385.0" promptText="Employee Name" style="-fx-background-color: C0C0C0;" />
+                  <TextField fx:id="txtContactNo" layoutX="160.0" layoutY="490.0" onKeyReleased="#txtAddressReleasedOnAction" opacity="0.75" prefHeight="35.0" prefWidth="385.0" promptText="Address" style="-fx-background-color: C0C0C0;" />
                   <Text layoutX="141.0" layoutY="265.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Employee Id" textAlignment="CENTER" wrappingWidth="110.0">
                      <font>
                         <Font name="Arial" size="12.0" />
@@ -75,13 +75,13 @@
                         <Font name="Arial" size="12.0" />
                      </font>
                   </Text>
-                  <TextField fx:id="txtAddress" layoutX="160.0" layoutY="420.0" opacity="0.75" prefHeight="35.0" prefWidth="385.0" style="-fx-background-color: C0C0C0;" text="Contact No" />
+                  <TextField fx:id="txtAddress" layoutX="160.0" layoutY="420.0" onKeyReleased="#txtCnoReleasedOnAction" opacity="0.75" prefHeight="35.0" prefWidth="385.0" promptText="Contact No" style="-fx-background-color: C0C0C0;" />
                   <Text layoutX="130.0" layoutY="550.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NIC No" textAlignment="CENTER" wrappingWidth="110.0">
                      <font>
                         <Font name="Arial" size="12.0" />
                      </font>
                   </Text>
-                  <TextField fx:id="txtNicNo" layoutX="162.0" layoutY="560.0" opacity="0.75" prefHeight="35.0" prefWidth="385.0" style="-fx-background-color: C0C0C0;" text="NIC No" />
+                  <TextField fx:id="txtNicNo" layoutX="162.0" layoutY="560.0" onKeyReleased="#txtNicNoReleasedOnAction" opacity="0.75" prefHeight="35.0" prefWidth="385.0" promptText="NIC No" style="-fx-background-color: C0C0C0;" />
                </children>
             </AnchorPane>
          </children>

@@ -71,13 +71,13 @@
 				<imageExpression><![CDATA["C:/Users/Asus/Downloads/Princeton-Symbol-removebg-preview.png"]]></imageExpression>
 			</image>
 			<staticText>
-				<reportElement x="-20" y="60" width="595" height="30" forecolor="#DB0D1B" uuid="389fc0dd-adc3-4b11-97c7-11f5a2086e74"/>
+				<reportElement x="-20" y="40" width="595" height="50" forecolor="#DB0D1B" uuid="389fc0dd-adc3-4b11-97c7-11f5a2086e74"/>
 				<box>
 					<pen lineColor="#120203"/>
 					<bottomPen lineWidth="0.5"/>
 				</box>
 				<textElement textAlignment="Center">
-					<font size="22" isBold="true"/>
+					<font size="25" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Payment Slip]]></text>
 			</staticText>
@@ -140,7 +140,7 @@
 		</band>
 	</columnHeader>
 	<detail>
-		<band height="125" splitType="Stretch">
+		<band height="59" splitType="Stretch">
 			<textField>
 				<reportElement x="60" y="10" width="70" height="20" uuid="c17ee67d-c41e-48b0-b767-7b066e99ae9c">
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="182dfff5-9012-499f-a799-74c7af075ffe"/>
@@ -186,12 +186,57 @@
 		</band>
 	</detail>
 	<columnFooter>
-		<band height="45" splitType="Stretch"/>
+		<band height="39" splitType="Stretch"/>
 	</columnFooter>
 	<pageFooter>
-		<band height="54" splitType="Stretch"/>
+		<band height="35" splitType="Stretch"/>
 	</pageFooter>
 	<summary>
-		<band height="42" splitType="Stretch"/>
+		<band height="500" splitType="Stretch">
+			<staticText>
+				<reportElement x="340" y="380" width="200" height="30" forecolor="#E89E15" uuid="a4c199ff-e864-4232-90a4-11cec7aede3b"/>
+				<textElement>
+					<font fontName="Arial Black" size="19"/>
+				</textElement>
+				<text><![CDATA[Princeton College]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="80" width="270" height="80" uuid="ae7ca0ba-5f0c-4334-ac4a-81490c996aa2"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[Princeton College IT Institute is a leading educational institution dedicated to providing comprehensive training and education in the field of Information Technology. Our institute offers a wide range of programs and courses designed to equip students with the skills and knowledge needed to thrive in today's digital landscape.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="130" y="10" width="310" height="40" forecolor="#150CC7" uuid="89cef50c-9989-45ce-b3b8-da79b388496e"/>
+				<textElement>
+					<font fontName="Leelawadee UI" size="22" isBold="true"/>
+				</textElement>
+				<text><![CDATA[!!!!!!!!!  Thank You  !!!!!!!!!!]]></text>
+			</staticText>
+			<line>
+				<reportElement x="-20" y="0" width="600" height="1" uuid="4b8fc789-6b21-4c02-943b-aa1ca4c454c7"/>
+			</line>
+			<staticText>
+				<reportElement x="30" y="170" width="270" height="80" uuid="74e57d43-5388-405f-92b2-c40329ce8cd7"/>
+				<text><![CDATA[With experienced instructors, state-of-the-art facilities, and a commitment to excellence, we strive to empower individuals to pursue successful careers in IT. Whether you're looking to advance your current skills or embark on a new career path, Princeton College IT Institute is here to support your educational journey and help you reach your goals.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="268" width="270" height="72" uuid="59a40d27-8ad4-4a66-83a7-5d9b5ccd1cfb"/>
+				<text><![CDATA[comprehensive training and education in the field of Information Technology. Our institute offers a wide range of programs and courses designed to equip students with the skills and knowledge needed to thrive in today's digital landscape.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="350" width="270" height="60" uuid="6c92a24b-9534-4d17-aa6e-9b4f12eda410"/>
+				<text><![CDATA[we strive to empower individuals to pursue successful careers in IT. Whether you're looking to advance your current skills or embark on a new career path, Princeton College IT Institute is here to support your ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="420" width="270" height="80" uuid="a2a97d63-5b3b-4e18-9ae7-7860112f4338"/>
+				<text><![CDATA[With experienced instructors, state-of-the-art facilities, and a commitment to excellence, we strive to empower individuals to pursue successful careers in IT. Whether you're looking to advance your current skills or embark on a new career path, Princeton College IT Institute is here to support your educational journey and help you reach your goals.]]></text>
+			</staticText>
+			<image>
+				<reportElement x="325" y="150" width="225" height="230" uuid="4dbaab70-7ddf-426f-809f-00acd81aa82f"/>
+				<imageExpression><![CDATA["C:/Users/Asus/Downloads/qr-code-bc94057f452f4806af70fd34540f72ad.png"]]></imageExpression>
+			</image>
+		</band>
 	</summary>
 </jasperReport>

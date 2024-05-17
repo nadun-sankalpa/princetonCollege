@@ -181,7 +181,7 @@ public class AddStudentForm {
 
     }
 
-    private boolean isValidInput(Pattern adressPattern, Pattern phonePattern, Pattern courseIdPattern, Pattern initialPaymentPattern, Pattern namePattern, Pattern nicNoPattern, Pattern studentIdPattern, Pattern idPattern) {
+    private boolean isValidInput(Pattern adressPattern, Pattern phonePattern, Pattern courseIdPattern, Pattern InitialPaymentPattern, Pattern NamePattern, Pattern NicNoPattern, Pattern StudentIdPattern, Pattern IDPattern) {
         boolean isValid = true;
         if(!adressPattern.matcher(txtAddress.getText()).matches()){
             addError(txtAddress);
@@ -205,20 +205,20 @@ public class AddStudentForm {
         }else{
             removeError(txtCourseId);
         }
-        if(!initialPaymentPattern.matcher(txtInitialPayment.getText()).matches()){
+        if(!InitialPaymentPattern.matcher(txtInitialPayment.getText()).matches()){
             addError(txtInitialPayment);
             isValid = false;
 
         }else{
             removeError(txtInitialPayment);
         }
-        if(!namePattern.matcher(txtName.getText()).matches()){
+        if(!NamePattern.matcher(txtName.getText()).matches()){
             addError(txtName);
             isValid = false;
         }else{
             removeError(txtName);
         }
-        if(!studentIdPattern.matcher(txtStudentId.getText()).matches()){
+        if(!StudentIdPattern.matcher(txtStudentId.getText()).matches()){
             addError(txtStudentId);
             isValid =false;
 
@@ -233,14 +233,14 @@ public class AddStudentForm {
         }else{
             removeError(txtCourseId);
         }
-        if(!nicNoPattern.matcher(txtNicNo.getText()).matches()){
+        if(!NicNoPattern.matcher(txtNicNo.getText()).matches()){
             addError(txtNicNo);
             isValid = false;
 
         }else{
             removeError(txtNicNo);
         }
-        if(!idPattern.matcher(txtUserId.getText()).matches()){
+        if(!IDPattern.matcher(txtUserId.getText()).matches()){
             addError(txtUserId);
             isValid = false;
 
