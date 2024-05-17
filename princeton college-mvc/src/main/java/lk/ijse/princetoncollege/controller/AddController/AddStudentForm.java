@@ -176,7 +176,10 @@ public class AddStudentForm {
 
             Payment payment = new Payment(PaymentId, initial_payment, date, student_id, user_id, course_id);
 
+
+
             boolean isSaved = AddStudentRepo.studentRegistration(student, payment);
+
         }
 
     }

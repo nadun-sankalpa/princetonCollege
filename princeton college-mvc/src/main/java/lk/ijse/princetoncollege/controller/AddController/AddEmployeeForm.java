@@ -138,6 +138,7 @@ public class AddEmployeeForm {
         }else{
             removeError(txtContactNo);
         }
+
         if(!EmployeeIdPattern.matcher(txtEmployeeId.getText()).matches()){
             addError(txtEmployeeId);
             isValid = false;
@@ -145,6 +146,7 @@ public class AddEmployeeForm {
         }else{
             removeError(txtEmployeeId);
         }
+
         if(!NicNoPattern.matcher(txtNicNo.getText()).matches()){
             addError(txtNicNo);
             isValid = false;
@@ -152,12 +154,13 @@ public class AddEmployeeForm {
         }else{
             removeError(txtNicNo);
         }
+
         if(!NamePattern.matcher(txtEmployeeName.getText()).matches()){
             addError(txtEmployeeName);
             isValid = false;
 
         }else{
-            removeError(txtNicNo);
+            removeError(txtEmployeeName);
         }
 
         return isValid;
