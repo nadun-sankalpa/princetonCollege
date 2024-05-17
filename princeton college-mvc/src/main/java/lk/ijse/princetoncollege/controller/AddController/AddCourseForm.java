@@ -41,7 +41,7 @@ public class AddCourseForm {
 
     @FXML
     void txtCourseFeeReleasedOnAction(KeyEvent event) {
-        Pattern CourseFeePattern = Pattern.compile("^(0|[1-9]\\d{0,6}|10000000)$\n");
+        Pattern CourseFeePattern = Pattern.compile("^(0|[1-9]\\d{0,6}|10000000)$");
         if(!CourseFeePattern.matcher(txtCourseFee.getText()).matches()){
             addError(txtCourseFee);
 
@@ -77,7 +77,7 @@ public class AddCourseForm {
 
     @FXML
     void txtDurationReleasedOnAction(KeyEvent event) {
-        Pattern DurationPattern = Pattern.compile("^([1-9]|[1-3][0-9]|4[0-8])\\s*months?$\n");
+        Pattern DurationPattern = Pattern.compile("^([1-9]|[1-3][0-9]|4[0-8])\\s*months?$");
         if(!DurationPattern.matcher(txtDuration.getText()).matches()){
             addError(txtDuration);
 
@@ -108,10 +108,10 @@ public class AddCourseForm {
         String main_lecturer = txtMainLecturer.getText();
         String course_fee = txtCourseFee.getText();
 
-        Pattern CourseFeePattern = Pattern.compile("^(0|[1-9]\\d{0,6}|10000000)$\n");
+        Pattern CourseFeePattern = Pattern.compile("^(0|[1-9]\\d{0,6}|10000000)$");
         Pattern CourseIdPattern = Pattern.compile("^C\\d{3}$");
         Pattern CourseNamePattern = Pattern.compile("^[A-z|\\\\s]{3,}$");
-        Pattern DurationPattern = Pattern.compile("^([1-9]|[1-3][0-9]|4[0-8])\\s*months?$\n");
+        Pattern DurationPattern = Pattern.compile("^([1-9]|[1-3][0-9]|4[0-8])\\s*months?$");
         Pattern MainLecturerPattern = Pattern.compile("^[A-z|\\\\s]{3,}$");
 
         if (isValidInput(CourseFeePattern,CourseIdPattern,CourseNamePattern,DurationPattern,MainLecturerPattern)) {
